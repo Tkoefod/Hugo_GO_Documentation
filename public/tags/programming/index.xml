@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Go Lang Notes</title>
+    <link>http://thomaskoefod.com/go1/tags/programming/</link>
+    <description>Recent content in Programming on Go Lang Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://thomaskoefod.com/go1/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Channels</title>
+      <link>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy_ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy_ii/</guid>
+      <description> channel basics example:
+package main import &amp;quot;fmt&amp;quot; func foo(c chan int, someValue int){ c &amp;lt;- someValue * 5 } func main() { fooVal := make(chan int) // can include a struct. go foo(fooVal, 5) go foo(fooVal, 3) //v1 := &amp;lt;-fooVal //v2 := &amp;lt;-fooVal v1, v2 := &amp;lt;-fooVal, &amp;lt;-fooVal // This by default is blocking fmt.Println(v1,v2) }  </description>
+    </item>
+    
+    <item>
+      <title>Concurrency</title>
+      <link>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy/</guid>
+      <description>Goroutines  include &amp;lsquo;go&amp;rsquo; infront of function to make it run async. go funcName()  sync package allows the use of wait groups that empower us to include multiple goroutines into a single wait group and we can then do something once all those are complete.
+ import &amp;quot;sync&amp;quot; var wg sync.WaitGroup wg.Add(1) wg.Wait() wg.Done()   Video Tutorial  Defer statement defines that something should only run after the rest of the function is complete.</description>
+    </item>
+    
+    <item>
+      <title>Directory Operations</title>
+      <link>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iii/</guid>
+      <description> Changing Directories Walking a Directory Tree </description>
+    </item>
+    
+    <item>
+      <title>File Operations</title>
+      <link>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-ii/</guid>
+      <description>Create a File f, err := os.Create(&amp;quot;/tmp/dat2&amp;quot;)  Opening a File  uses Package: os  f, err := os.Open(&amp;quot;/tmp/dat&amp;quot;)  Closing a File You should always close the file when you are done with it.
+f.close()  Reading a File Reading a whole File (simple method)  uses Package: ioutil.ReadFile  Reading an entire file at once (not efficient for large files).
+ dat, err := ioutil.ReadFile(&amp;quot;/tmp/dat&amp;quot;) if err !</description>
+    </item>
+    
+    <item>
+      <title>Filesystem</title>
+      <link>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-i/</guid>
+      <description>Packages  path/filepath &amp;amp;#151 filepath functions os &amp;amp;#151 main os functions flag &amp;amp;#151 used to get passed flags/parameters/arguments  How to collect passed flags/parameters/arguments to the GO program  import the flag Package ie.  import &amp;quot;flag&amp;quot;  use the flag.Arg function to get the non-flag arguments in the form of a string ie.  firstArgument := flag.Arg(0)  use the flag.Parse() to flags (have a dash) like: -d  this sets the flags to their non-default values flag.</description>
+    </item>
+    
+    <item>
+      <title>Functions</title>
+      <link>http://thomaskoefod.com/go1/lessons/intro/functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/intro/functions/</guid>
+      <description> Functions Define a Function: func &amp;lt;funcname&amp;gt;( &amp;lt;in Variables&amp;gt; ) &amp;lt;out variable types&amp;gt; { // so somehting }
+example:
+func myFunction( change )  </description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>http://thomaskoefod.com/go1/lessons/intro/getting_started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/intro/getting_started/</guid>
+      <description>In GO programmers use camel case for names so things like &amp;lsquo;CamelCase&amp;rsquo; or &amp;lsquo;camelCase&amp;rsquo; but not &amp;lsquo;camel_case&amp;rsquo;.
+Main types of Declarations:    name type syntax example     var variable var name type = expression var myVar int = 5   const constant     type      func function      Types of Variables    name type example     int integer number 25   float64 long 64 bit decimal 1.</description>
+    </item>
+    
+    <item>
+      <title>HUGO</title>
+      <link>http://thomaskoefod.com/go1/lessons/templates/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/templates/hugo/</guid>
+      <description> HUGO is an exreamly fast wonderful static website generator  (HUGO)[https://gohugo.io]  </description>
+    </item>
+    
+    <item>
+      <title>Loops</title>
+      <link>http://thomaskoefod.com/go1/lessons/intro/loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/intro/loops/</guid>
+      <description>Loops For loops are the only looping structure in Go Lang but with it you can simulate any While, For While, etc loop.
+Basic Syntax: for &amp;lt;int&amp;gt;; &amp;lt;comparision&amp;gt;; &amp;lt;incremntor&amp;gt; { //code block }
+Example:
+for i := 0; i &amp;lt; 5; i++ { // do something } for i &amp;gt; 16 { i++ }  any of the options for the For loop can be left off also.
+Range the range command can be used with for to easily loop over arrays, lists, etc.</description>
+    </item>
+    
+    <item>
+      <title>Other Filesystem Operations</title>
+      <link>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iv/</guid>
+      <description> Running an external system program. </description>
+    </item>
+    
+    <item>
+      <title>Packages</title>
+      <link>http://thomaskoefod.com/go1/lessons/intro/packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/intro/packages/</guid>
+      <description>Common Packages    name use description internal Links Official Documentation     fmt format used normally for printing to output  Package fmt   os operating system used for filesystem operations  Package os   io/ioutil input output used to read a file Reading A File Package ioutil   io basic I/O basic interfaces to I/O primitives  Package io   regexp Regular Expressions Regular Expressions  Package regexp    For imformation on a package you can use the go doc command.</description>
+    </item>
+    
+    <item>
+      <title>Regular Expressions</title>
+      <link>http://thomaskoefod.com/go1/lessons/filters/regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filters/regex/</guid>
+      <description>Regular Expressions  use the package: &amp;lsquo;regexp&amp;rsquo;  Go By Example on Regular Expressions
+Tests if a pattern matches a string match, _ := regexp.MatchString(&amp;quot;p([a-z]+)ch&amp;quot;, &amp;quot;peach&amp;quot;)  Compile a regular expression for use in others r, _ := regexp.Compile(&amp;quot;p([a-z]+)ch&amp;quot;)  online Go regex tester</description>
+    </item>
+    
+    <item>
+      <title>Reserved Names</title>
+      <link>http://thomaskoefod.com/go1/lessons/intro/reserved_names/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/intro/reserved_names/</guid>
+      <description> 25 keywords that are reserved Go has 25 keywords that are reserved for the system.
+ break select case struct chan switch const type continue var default defer else fallthrough for func go goto if import interface map package range return  </description>
+    </item>
+    
+    <item>
+      <title>String Matching</title>
+      <link>http://thomaskoefod.com/go1/lessons/filters/filters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filters/filters/</guid>
+      <description> Common String Matching </description>
+    </item>
+    
+    <item>
+      <title>Templates</title>
+      <link>http://thomaskoefod.com/go1/lessons/templates/templates_intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/templates/templates_intro/</guid>
+      <description>HTML Templates are stored in separate files normally in an html file that contains an mostly HTML segment along with handlebar like variables {{ .variableName }}.
+defining template within the GO program  import HTML template library. define the template file. execute the template along with passing variables.  Import the library import io/html/template
+Define the template file t, _ := template.ParseFiles(&amp;quot;templateName.html&amp;quot;) //name of new template is &amp;ldquo;t&amp;rdquo; and we do not have an error variable.</description>
+    </item>
+    
+    <item>
+      <title>Templates What are they</title>
+      <link>http://thomaskoefod.com/go1/lessons/templates/templates_ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/templates/templates_ii/</guid>
+      <description> using range to iterate over a map, array etc inside an HTML template. You can loop over a map or array inside an HTML template by using range.
+{{ range $key, $value := .News}} &amp;lt;p&amp;gt;some stuff&amp;lt;/p&amp;gt; {{ end }}  </description>
+    </item>
+    
+    <item>
+      <title>Wait Groups</title>
+      <link>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy_iii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy_iii/</guid>
+      <description> the convience of Wait Groups iterating over channels example:
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;sync&amp;quot; ) var wg sync.WaitGroup func foo(c chan int, someValue int){ defer wg.Done() c &amp;lt;- someValue * 5 } func main() { fooVal := make(chan int, 10) for i := 0; i &amp;lt; 10 ; i++ { wg.Add(1) go foo(fooVal, i) } wg.Wait() close(fooVal) for item := range fooVal { fmt.Println(item) } }  </description>
+    </item>
+    
+  </channel>
+</rss>

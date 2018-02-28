@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/js/highlight/styles/tomorrow-night-blue.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/main.css" />
-    <script src="/main.js"></script>
-    <script src="/js/highlight/highlight.pack.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{.Site.BaseURL}}/js/highlight/styles/tomorrow-night-blue.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{.Site.BaseURL}}/main.css" />
+    <script src="{{.Site.BaseURL}}/main.js"></script>
+    <script src="{{.Site.BaseURL}}/js/highlight/highlight.pack.js"></script>
 </head>
 <body>
     {{ partial "menu.html" . }}
-    <h1>{{ .Site.Title }}</h1>
-    <h3>this is the base of template</h3>
+    <div id="Site-Title"><h1>{{ .Site.Title }}</h1></div>
+    <!-- <h3>this is the base of template</h3> -->
     <hr />
     {{ block "main" . }}
     {{ end }}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Templates on Go Lang Notes</title>
+    <link>http://thomaskoefod.com/go1/lessons/templates/</link>
+    <description>Recent content in Templates on Go Lang Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://thomaskoefod.com/go1/lessons/templates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HUGO</title>
+      <link>http://thomaskoefod.com/go1/lessons/templates/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/templates/hugo/</guid>
+      <description> HUGO is an exreamly fast wonderful static website generator  (HUGO)[https://gohugo.io]  </description>
+    </item>
+    
+    <item>
+      <title>Templates</title>
+      <link>http://thomaskoefod.com/go1/lessons/templates/templates_intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/templates/templates_intro/</guid>
+      <description>HTML Templates are stored in separate files normally in an html file that contains an mostly HTML segment along with handlebar like variables {{ .variableName }}.
+defining template within the GO program  import HTML template library. define the template file. execute the template along with passing variables.  Import the library import io/html/template
+Define the template file t, _ := template.ParseFiles(&amp;quot;templateName.html&amp;quot;) //name of new template is &amp;ldquo;t&amp;rdquo; and we do not have an error variable.</description>
+    </item>
+    
+    <item>
+      <title>Templates What are they</title>
+      <link>http://thomaskoefod.com/go1/lessons/templates/templates_ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/templates/templates_ii/</guid>
+      <description> using range to iterate over a map, array etc inside an HTML template. You can loop over a map or array inside an HTML template by using range.
+{{ range $key, $value := .News}} &amp;lt;p&amp;gt;some stuff&amp;lt;/p&amp;gt; {{ end }}  </description>
+    </item>
+    
+  </channel>
+</rss>

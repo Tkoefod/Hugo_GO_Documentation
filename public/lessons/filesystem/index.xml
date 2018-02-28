@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filesystem on Go Lang Notes</title>
+    <link>http://thomaskoefod.com/go1/lessons/filesystem/</link>
+    <description>Recent content in Filesystem on Go Lang Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://thomaskoefod.com/go1/lessons/filesystem/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Directory Operations</title>
+      <link>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iii/</guid>
+      <description> Changing Directories Walking a Directory Tree </description>
+    </item>
+    
+    <item>
+      <title>File Operations</title>
+      <link>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-ii/</guid>
+      <description>Create a File f, err := os.Create(&amp;quot;/tmp/dat2&amp;quot;)  Opening a File  uses Package: os  f, err := os.Open(&amp;quot;/tmp/dat&amp;quot;)  Closing a File You should always close the file when you are done with it.
+f.close()  Reading a File Reading a whole File (simple method)  uses Package: ioutil.ReadFile  Reading an entire file at once (not efficient for large files).
+ dat, err := ioutil.ReadFile(&amp;quot;/tmp/dat&amp;quot;) if err !</description>
+    </item>
+    
+    <item>
+      <title>Filesystem</title>
+      <link>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-i/</guid>
+      <description>Packages  path/filepath &amp;amp;#151 filepath functions os &amp;amp;#151 main os functions flag &amp;amp;#151 used to get passed flags/parameters/arguments  How to collect passed flags/parameters/arguments to the GO program  import the flag Package ie.  import &amp;quot;flag&amp;quot;  use the flag.Arg function to get the non-flag arguments in the form of a string ie.  firstArgument := flag.Arg(0)  use the flag.Parse() to flags (have a dash) like: -d  this sets the flags to their non-default values flag.</description>
+    </item>
+    
+    <item>
+      <title>Other Filesystem Operations</title>
+      <link>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iv/</guid>
+      <description> Running an external system program. </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filters on Go Lang Notes</title>
+    <link>http://thomaskoefod.com/go1/lessons/filters/</link>
+    <description>Recent content in Filters on Go Lang Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://thomaskoefod.com/go1/lessons/filters/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Regular Expressions</title>
+      <link>http://thomaskoefod.com/go1/lessons/filters/regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filters/regex/</guid>
+      <description>Regular Expressions  use the package: &amp;lsquo;regexp&amp;rsquo;  Go By Example on Regular Expressions
+Tests if a pattern matches a string match, _ := regexp.MatchString(&amp;quot;p([a-z]+)ch&amp;quot;, &amp;quot;peach&amp;quot;)  Compile a regular expression for use in others r, _ := regexp.Compile(&amp;quot;p([a-z]+)ch&amp;quot;)  online Go regex tester</description>
+    </item>
+    
+    <item>
+      <title>String Matching</title>
+      <link>http://thomaskoefod.com/go1/lessons/filters/filters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filters/filters/</guid>
+      <description> Common String Matching </description>
+    </item>
+    
+  </channel>
+</rss>

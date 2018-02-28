@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/js/highlight/styles/tomorrow-night-blue.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/main.css" />
+    <script src="http://thomaskoefod.com/go1/main.js"></script>
+    <script src="http://thomaskoefod.com/go1/js/highlight/highlight.pack.js"></script>
+</head>
+<body>
+    
+<div class="menu">
+    <div class="menu-item"><a href="/">Main</a></div>
+
+    <div class="menu-item"><a href="/go1/lessons/">Lessons</a> </div>  
+
+</div>
+    <div id="Site-Title"><h1>Go Lang Notes</h1></div>
+    
+    <hr />
+    
+    <h1>Regular Expressions</h1>
+    
+
+<h3 id="regular-expressions">Regular Expressions</h3>
+
+<ul>
+<li>use the package: &lsquo;regexp&rsquo;</li>
+</ul>
+
+<p><a href="https://gobyexample.com/regular-expressions">Go By Example on Regular Expressions</a></p>
+
+<h4 id="tests-if-a-pattern-matches-a-string">Tests if a pattern matches a string</h4>
+
+<pre><code>match, _ := regexp.MatchString(&quot;p([a-z]+)ch&quot;, &quot;peach&quot;)
+</code></pre>
+
+<h4 id="compile-a-regular-expression-for-use-in-others">Compile a regular expression for use in others</h4>
+
+<pre><code>r, _ := regexp.Compile(&quot;p([a-z]+)ch&quot;)
+</code></pre>
+
+<p><a href="https://regex-golang.appspot.com/assets/html/index.html">online Go regex tester</a></p>
+
+
+</body>
+</html>

@@ -27,7 +27,8 @@ allows the use of wait groups that empower us to include multiple goroutines int
   wg.Wait()
   wg.Done()
 ```
-* [Video Tutorial](https://www.youtube.com/watch?v=HRKfVjCB3lM)
+* [Video Tutorial source](https://www.youtube.com/watch?v=HRKfVjCB3lM)
+
 
 ### Defer statement
 defines that something should only run after the rest of the function is complete.

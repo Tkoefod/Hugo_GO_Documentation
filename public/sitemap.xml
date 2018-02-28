@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/basic/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/channels/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy_ii/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/concurrency/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/concurrency/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iii/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-ii/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/filesystem/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/filesystem/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-i/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/filters/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/for/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/functions/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/intro/functions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/intro/getting_started/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/gettingstarted/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/goroutines/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/templates/hugo/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/hugo/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/intro/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/loops/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/intro/loops/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/matching/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/other/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iv/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/packages/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/intro/packages/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/programming/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/filters/regex/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/intro/reserved_names/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/static/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/string/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/filters/filters/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/stuff/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/templates/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/templates/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/templates/templates_intro/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/templates/templates_ii/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy_iii/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/waitgroup/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/wg/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/</loc>
+  </url>
+  
+</urlset>

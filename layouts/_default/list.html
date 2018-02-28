@@ -1,20 +1,29 @@
 {{ define "main" }}
 
-this is the list page template
+<!-- this is the list page template -->
+    {{ if not (.Params.root) }}
+    {{ if .Sections }}
     <div class="section-list">
         {{ range sort .Sections ".Params.chapter"}}
-            <div class="section-list-item"><a href="{{.URL}}"> {{.Title}}  {{.Params.chapter}}</a></div>
+            <div class="section-list-item">Chapter: {{.Params.chapter}} <a href="{{.URL}}"> {{.Title}}</a></div>
         {{ end }}
     </div>
+    {{end}}
     {{.Content}}
+    {{ if .Pages }}
+    <h3>Chapter: {{.Params.chapter}}</h3>
     <ul>
-        {{ range .Pages }}
+        {{ range sort .Pages ".Params.lesson"}}
         <li>
-            <a href="{{ .URL }}"> {{ .Title }} Lesson: {{.Params.lesson}} / chapter: {{.Params.chapter}}</a>
+            <a href="{{ .URL }}"> {{ .Title }} Lesson: {{.Params.lesson}} </a>
         </li>
         {{ end }}
     </ul>
+    {{end}}
     
     <br />
+{{else}}
+    {{.Content}}
+{{end}}
 
 {{end}}

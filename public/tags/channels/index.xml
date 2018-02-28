@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Channels on Go Lang Notes</title>
+    <link>http://thomaskoefod.com/go1/tags/channels/</link>
+    <description>Recent content in Channels on Go Lang Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://thomaskoefod.com/go1/tags/channels/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Channels</title>
+      <link>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy_ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy_ii/</guid>
+      <description> channel basics example:
+package main import &amp;quot;fmt&amp;quot; func foo(c chan int, someValue int){ c &amp;lt;- someValue * 5 } func main() { fooVal := make(chan int) // can include a struct. go foo(fooVal, 5) go foo(fooVal, 3) //v1 := &amp;lt;-fooVal //v2 := &amp;lt;-fooVal v1, v2 := &amp;lt;-fooVal, &amp;lt;-fooVal // This by default is blocking fmt.Println(v1,v2) }  </description>
+    </item>
+    
+    <item>
+      <title>Directory Operations</title>
+      <link>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iii/</guid>
+      <description> Changing Directories Walking a Directory Tree </description>
+    </item>
+    
+    <item>
+      <title>File Operations</title>
+      <link>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-ii/</guid>
+      <description>Create a File f, err := os.Create(&amp;quot;/tmp/dat2&amp;quot;)  Opening a File  uses Package: os  f, err := os.Open(&amp;quot;/tmp/dat&amp;quot;)  Closing a File You should always close the file when you are done with it.
+f.close()  Reading a File Reading a whole File (simple method)  uses Package: ioutil.ReadFile  Reading an entire file at once (not efficient for large files).
+ dat, err := ioutil.ReadFile(&amp;quot;/tmp/dat&amp;quot;) if err !</description>
+    </item>
+    
+    <item>
+      <title>Filesystem</title>
+      <link>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-i/</guid>
+      <description>Packages  path/filepath &amp;amp;#151 filepath functions os &amp;amp;#151 main os functions flag &amp;amp;#151 used to get passed flags/parameters/arguments  How to collect passed flags/parameters/arguments to the GO program  import the flag Package ie.  import &amp;quot;flag&amp;quot;  use the flag.Arg function to get the non-flag arguments in the form of a string ie.  firstArgument := flag.Arg(0)  use the flag.Parse() to flags (have a dash) like: -d  this sets the flags to their non-default values flag.</description>
+    </item>
+    
+    <item>
+      <title>Loops</title>
+      <link>http://thomaskoefod.com/go1/lessons/intro/loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/intro/loops/</guid>
+      <description>Loops For loops are the only looping structure in Go Lang but with it you can simulate any While, For While, etc loop.
+Basic Syntax: for &amp;lt;int&amp;gt;; &amp;lt;comparision&amp;gt;; &amp;lt;incremntor&amp;gt; { //code block }
+Example:
+for i := 0; i &amp;lt; 5; i++ { // do something } for i &amp;gt; 16 { i++ }  any of the options for the For loop can be left off also.
+Range the range command can be used with for to easily loop over arrays, lists, etc.</description>
+    </item>
+    
+    <item>
+      <title>Other Filesystem Operations</title>
+      <link>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iv/</guid>
+      <description> Running an external system program. </description>
+    </item>
+    
+    <item>
+      <title>Regular Expressions</title>
+      <link>http://thomaskoefod.com/go1/lessons/filters/regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/filters/regex/</guid>
+      <description>Regular Expressions  use the package: &amp;lsquo;regexp&amp;rsquo;  Go By Example on Regular Expressions
+Tests if a pattern matches a string match, _ := regexp.MatchString(&amp;quot;p([a-z]+)ch&amp;quot;, &amp;quot;peach&amp;quot;)  Compile a regular expression for use in others r, _ := regexp.Compile(&amp;quot;p([a-z]+)ch&amp;quot;)  online Go regex tester</description>
+    </item>
+    
+    <item>
+      <title>Wait Groups</title>
+      <link>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy_iii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy_iii/</guid>
+      <description> the convience of Wait Groups iterating over channels example:
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;sync&amp;quot; ) var wg sync.WaitGroup func foo(c chan int, someValue int){ defer wg.Done() c &amp;lt;- someValue * 5 } func main() { fooVal := make(chan int, 10) for i := 0; i &amp;lt; 10 ; i++ { wg.Add(1) go foo(fooVal, i) } wg.Wait() close(fooVal) for item := range fooVal { fmt.Println(item) } }  </description>
+    </item>
+    
+  </channel>
+</rss>

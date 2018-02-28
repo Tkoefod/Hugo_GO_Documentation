@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goroutines on Go Lang Notes</title>
+    <link>http://thomaskoefod.com/go1/tags/goroutines/</link>
+    <description>Recent content in Goroutines on Go Lang Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://thomaskoefod.com/go1/tags/goroutines/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Concurrency</title>
+      <link>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy/</guid>
+      <description>Goroutines  include &amp;lsquo;go&amp;rsquo; infront of function to make it run async. go funcName()  sync package allows the use of wait groups that empower us to include multiple goroutines into a single wait group and we can then do something once all those are complete.
+ import &amp;quot;sync&amp;quot; var wg sync.WaitGroup wg.Add(1) wg.Wait() wg.Done()   Video Tutorial  Defer statement defines that something should only run after the rest of the function is complete.</description>
+    </item>
+    
+  </channel>
+</rss>

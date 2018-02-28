@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/js/highlight/styles/tomorrow-night-blue.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/main.css" />
+    <script src="http://thomaskoefod.com/go1/main.js"></script>
+    <script src="http://thomaskoefod.com/go1/js/highlight/highlight.pack.js"></script>
+</head>
+<body>
+    
+<div class="menu">
+    <div class="menu-item"><a href="/">Main</a></div>
+
+    <div class="menu-item"><a href="/go1/lessons/">Lessons</a> </div>  
+
+</div>
+    <div id="Site-Title"><h1>Go Lang Notes</h1></div>
+    
+    <hr />
+    
+    <h1>File Operations</h1>
+    
+
+<h2 id="create-a-file">Create a File</h2>
+
+<pre><code>f, err := os.Create(&quot;/tmp/dat2&quot;)
+</code></pre>
+
+<h3 id="opening-a-file">Opening a File</h3>
+
+<ul>
+<li>uses Package: os</li>
+</ul>
+
+<pre><code>f, err := os.Open(&quot;/tmp/dat&quot;)
+</code></pre>
+
+<h3 id="closing-a-file">Closing a File</h3>
+
+<p>You should always close the file when you are done with it.</p>
+
+<pre><code>f.close()
+</code></pre>
+
+<h3 id="reading-a-file">Reading a File</h3>
+
+<h4 id="reading-a-whole-file-simple-method">Reading a whole File (simple method)</h4>
+
+<ul>
+<li>uses Package: ioutil.ReadFile</li>
+</ul>
+
+<p>Reading an entire file at once (not efficient for large files).</p>
+
+<pre><code>  dat, err := ioutil.ReadFile(&quot;/tmp/dat&quot;)
+  if err != nil { // check for error
+      panic(err)
+  }
+  fmt.Print(string(dat))
+</code></pre>
+
+<h4 id="reading-parts-bytes-of-a-file">Reading parts (bytes) of a file</h4>
+
+<p>Read some bytes from the beginning of the file. Allow up to 5 to be read but also note how many actually were read.</p>
+
+<pre><code>b1 := make([]byte, 5)
+n1, err := f.Read(b1)
+check(err)
+fmt.Printf(&quot;%d bytes: %s\n&quot;, n1, string(b1))
+</code></pre>
+
+<p>Moving to a location in a file.</p>
+
+<pre><code>_, err = f.Seek(0, 0) // goes to beginning
+</code></pre>
+
+<p>Seek to a known location and start reading from there.</p>
+
+<pre><code>o2, err := f.Seek(6, 0)
+check(err)
+b2 := make([]byte, 2)
+n2, err := f.Read(b2)
+check(err)
+fmt.Printf(&quot;%d bytes @ %d: %s\n&quot;, n2, o2, string(b2))
+</code></pre>
+
+<p>The above is more robust with the use of the &lsquo;io&rsquo; package and ReadAtLeast function.</p>
+
+<pre><code>o3, err := f.Seek(6, 0)
+check(err)
+b3 := make([]byte, 2)
+n3, err := io.ReadAtLeast(f, b3, 2)
+check(err)
+fmt.Printf(&quot;%d bytes @ %d: %s\n&quot;, n3, o3, string(b3))
+</code></pre>
+
+<p>Using the &ldquo;bufio&rdquo; package allows for better efficiency for many small reads and provides additional reading methods.</p>
+
+<ul>
+<li>uses package: bufio
+<code>
+r4 := bufio.NewReader(f)
+b4, err := r4.Peek(5)
+check(err)
+fmt.Printf(&quot;5 bytes: %s\n&quot;, string(b4))
+</code></li>
+</ul>
+
+<h3 id="writing-a-file">Writing a File</h3>
+
+<h4 id="dumping-a-string-or-bytes-into-a-file">Dumping a string or bytes into a file</h4>
+
+<ul>
+<li>uses package: ioutil
+<code>
+myData := []byte(&quot;hello\ngo\n&quot;)
+err := ioutil.WriteFile(&quot;/tmp/data1&quot;, myData, 0644)
+check(err)
+</code></li>
+</ul>
+
+<p>using bufio writer (NewWriter()) to write like we used bufio to read above.
+* uses package: bufio</p>
+
+<pre><code>w := bufio.NewWriter(f)
+n4, err := w.WriteString(&quot;buffered\n&quot;)
+fmt.Printf(&quot;wrote %d bytes\n&quot;, n4)
+w.Flush() // flush ensures that all buffered operations have completed.
+</code></pre>
+
+<h4 id="appending-to-an-existing-file">Appending to an existing File</h4>
+
+<h4 id="deleting-a-file">Deleting a File</h4>
+
+
+</body>
+</html>

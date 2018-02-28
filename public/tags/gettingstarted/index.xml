@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gettingstarted on Go Lang Notes</title>
+    <link>http://thomaskoefod.com/go1/tags/gettingstarted/</link>
+    <description>Recent content in Gettingstarted on Go Lang Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://thomaskoefod.com/go1/tags/gettingstarted/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started</title>
+      <link>http://thomaskoefod.com/go1/lessons/intro/getting_started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/intro/getting_started/</guid>
+      <description>In GO programmers use camel case for names so things like &amp;lsquo;CamelCase&amp;rsquo; or &amp;lsquo;camelCase&amp;rsquo; but not &amp;lsquo;camel_case&amp;rsquo;.
+Main types of Declarations:    name type syntax example     var variable var name type = expression var myVar int = 5   const constant     type      func function      Types of Variables    name type example     int integer number 25   float64 long 64 bit decimal 1.</description>
+    </item>
+    
+    <item>
+      <title>Packages</title>
+      <link>http://thomaskoefod.com/go1/lessons/intro/packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/intro/packages/</guid>
+      <description>Common Packages    name use description internal Links Official Documentation     fmt format used normally for printing to output  Package fmt   os operating system used for filesystem operations  Package os   io/ioutil input output used to read a file Reading A File Package ioutil   io basic I/O basic interfaces to I/O primitives  Package io   regexp Regular Expressions Regular Expressions  Package regexp    For imformation on a package you can use the go doc command.</description>
+    </item>
+    
+    <item>
+      <title>Reserved Names</title>
+      <link>http://thomaskoefod.com/go1/lessons/intro/reserved_names/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/intro/reserved_names/</guid>
+      <description> 25 keywords that are reserved Go has 25 keywords that are reserved for the system.
+ break select case struct chan switch const type continue var default defer else fallthrough for func go goto if import interface map package range return  </description>
+    </item>
+    
+  </channel>
+</rss>

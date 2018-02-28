@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/js/highlight/styles/tomorrow-night-blue.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/main.css" />
+    <script src="http://thomaskoefod.com/go1/main.js"></script>
+    <script src="http://thomaskoefod.com/go1/js/highlight/highlight.pack.js"></script>
+</head>
+<body>
+    
+<div class="menu">
+    <div class="menu-item"><a href="/">Main</a></div>
+
+    <div class="menu-item"><a href="/go1/lessons/">Lessons</a> </div>  
+
+</div>
+    <div id="Site-Title"><h1>Go Lang Notes</h1></div>
+    
+    <hr />
+    
+    <h1>Templates</h1>
+    
+
+<h3 id="html-templates">HTML Templates</h3>
+
+<p>are stored in separate files normally in an html file that contains an mostly HTML segment along with handlebar like variables <code>{{ .variableName }}</code>.</p>
+
+<h4 id="defining-template-within-the-go-program">defining template within the GO program</h4>
+
+<ol>
+<li>import HTML template library.</li>
+<li>define the template file.</li>
+<li>execute the template along with passing variables.</li>
+</ol>
+
+<h5 id="import-the-library">Import the library</h5>
+
+<p><code>import io/html/template</code></p>
+
+<h5 id="define-the-template-file">Define the template file</h5>
+
+<p><code>t, _ := template.ParseFiles(&quot;templateName.html&quot;)</code> //name of new template is &ldquo;t&rdquo; and we do not have an error variable.</p>
+
+<h5 id="execute-the-template">Execute the template.</h5>
+
+<pre><code>  p := MyTemplateStruct{
+    Title: &quot;someTile&quot;,
+    OtherSomthing: &quot;somethingElse&quot;,
+    Num: 13} // struct to enable multiple values pass.
+  t.Execute((w,p))
+</code></pre>
+
+
+</body>
+</html>

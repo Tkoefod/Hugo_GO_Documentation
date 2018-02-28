@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/js/highlight/styles/tomorrow-night-blue.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/main.css" />
+    <script src="http://thomaskoefod.com/go1/main.js"></script>
+    <script src="http://thomaskoefod.com/go1/js/highlight/highlight.pack.js"></script>
+</head>
+<body>
+    
+<div class="menu">
+    <div class="menu-item"><a href="/">Main</a></div>
+
+    <div class="menu-item"><a href="/go1/lessons/">Lessons</a> </div>  
+
+</div>
+    <div id="Site-Title"><h1>Go Lang Notes</h1></div>
+    
+    <hr />
+    
+    <h1>Filesystem</h1>
+    
+
+<h4 id="packages">Packages</h4>
+
+<ul>
+<li><code>path/filepath</code> &amp;#151 filepath functions</li>
+<li><code>os</code> &amp;#151 main os functions</li>
+<li><code>flag</code> &amp;#151 used to get passed flags/parameters/arguments</li>
+</ul>
+
+<h4 id="how-to-collect-passed-flags-parameters-arguments-to-the-go-program">How to collect passed flags/parameters/arguments to the GO program</h4>
+
+<ol>
+<li>import the <code>flag</code> Package ie.
+<code>
+import &quot;flag&quot;
+</code></li>
+<li>use the <code>flag.Arg</code> function to get the non-flag arguments in the form of a string ie.
+<code>
+firstArgument := flag.Arg(0)
+</code></li>
+<li>use the <code>flag.Parse()</code> to flags (have a dash) like: <code>-d</code>
+
+<ul>
+<li>this sets the flags to their non-default values</li>
+<li><code>flag.Bool</code> &amp;#151 sets a boolean flag</li>
+<li><code>flag.String</code> &amp;#151 sets a string flag</li>
+<li>take three arguments: name of the flag, default value for the flag, and a help message or error message that will print if flag errors.
+<code>
+var b = flag.Bool(&quot;b&quot;, false, &quot;some help string&quot;)
+var myString = flag.String(&quot;my string&quot;, &quot; default my string&quot;, &quot;some help string for myString&quot;)
+</code></li>
+</ul></li>
+</ol>
+
+
+</body>
+</html>

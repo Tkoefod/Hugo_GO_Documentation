@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>For on Go Lang Notes</title>
+    <link>http://thomaskoefod.com/go1/tags/for/</link>
+    <description>Recent content in For on Go Lang Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://thomaskoefod.com/go1/tags/for/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Loops</title>
+      <link>http://thomaskoefod.com/go1/lessons/intro/loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/intro/loops/</guid>
+      <description>Loops For loops are the only looping structure in Go Lang but with it you can simulate any While, For While, etc loop.
+Basic Syntax: for &amp;lt;int&amp;gt;; &amp;lt;comparision&amp;gt;; &amp;lt;incremntor&amp;gt; { //code block }
+Example:
+for i := 0; i &amp;lt; 5; i++ { // do something } for i &amp;gt; 16 { i++ }  any of the options for the For loop can be left off also.
+Range the range command can be used with for to easily loop over arrays, lists, etc.</description>
+    </item>
+    
+  </channel>
+</rss>
