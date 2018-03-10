@@ -1,53 +1,70 @@
-#Site-Title{
-    border: 2px solid rgba(35,35,200,.80);
+#Site-Title {
+    border: 2px solid rgba(35, 35, 200, .80);
     display: flex;
     justify-content: center;
     border-radius: 0 0 10px 10px;
 }
-#Site-Title > h1 {
-    text-shadow: 1px 1px 2px rgba(35,35,200,.80);
+
+#Site-Title>h1 {
+    text-shadow: 1px 1px 2px rgba(35, 35, 200, .80);
 }
 
-.menu{
+.menu {
     display: flex;
-    background-color: rgba(35,35,200,.80);
+    background-color: rgba(35, 35, 200, .80);
     width: 100%;
     height: 2em;
     justify-content: flex-start;
     align-items: center;
 }
-.menu-item{
+
+.menu-item {
     border: 1px solid black;
     float: left;
     color: white;
     margin-left: 1em;
 }
-.menu-item a{
+
+.menu-item a {
     color: aliceblue;
 }
-.section-list{
+
+.section-list {
     background-color: bisque;
     padding: 1em;
 }
-.section-list > .section-list-item{
+
+.section-list>.section-list-item {
     margin: 1em;
     padding: 0.35em;
     border: 1px solid green;
     border-radius: 10px;
 }
-.section-list > .section-list-item > a {
+
+.section-list>.section-list-item>a {
     padding-left: 1em;
 }
 
 table {
     box-sizing: border-box;
-    background-color: rgba(35,35,200,.20);
-    box-shadow: 4px 4px 7px rgba(35,35,200,.80);
+    background-color: rgba(35, 35, 200, .20);
+    box-shadow: 4px 4px 7px rgba(35, 35, 200, .80);
     border-radius: 5px;
 }
-td, th{
+
+td,
+th {
     box-sizing: border-box;
     border: 1px solid black;
     margin: 0px;
     padding: 5px;
+}
+
+code {
+    background-color: rgb(0, 36, 81);
+    color: rgb(211,211,244);
+    padding: 3px;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    border-radius: 10px;
 }

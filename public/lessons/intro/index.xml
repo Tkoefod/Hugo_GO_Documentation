@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Control Commands</title>
+      <link>http://thomaskoefod.com/go1/lessons/intro/control/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/intro/control/</guid>
+      <description>Control Structors (if/else/switch) if command switch Syntax:
+ switch &amp;lt;variable&amp;gt; { case &amp;lt;value&amp;gt;: // some code case &amp;lt;value2&amp;gt; // some other code default: // some code that runs if the others do not. }  the switch command allows one of many conditionals to be selected based on the &amp;ldquo;switch&amp;rdquo;. In the simple and probably most commong example switch command takes a single parameter and based on it does one of many cases.</description>
+    </item>
+    
+    <item>
       <title>Functions</title>
       <link>http://thomaskoefod.com/go1/lessons/intro/functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -42,6 +52,16 @@ Basic Syntax: for &amp;lt;int&amp;gt;; &amp;lt;comparision&amp;gt;; &amp;lt;incr
 Example:
 for i := 0; i &amp;lt; 5; i++ { // do something } for i &amp;gt; 16 { i++ }  any of the options for the For loop can be left off also.
 Range the range command can be used with for to easily loop over arrays, lists, etc.</description>
+    </item>
+    
+    <item>
+      <title>Maps</title>
+      <link>http://thomaskoefod.com/go1/lessons/intro/maps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/intro/maps/</guid>
+      <description>Map data structor maps are unsorted set of data consisting of keys and values that are associated to them. If you ask to get the value of a key that doesn&amp;rsquo;t exist &amp;lsquo;0&amp;rsquo; is returned.
+   Action Example     create emptry map m := make(map[string]int)   create &amp;amp; declare n := map[string]int{&amp;quot;foo&amp;quot;: 1, &amp;quot;bar&amp;quot;: 2}   add data m[&amp;quot;k2&amp;quot;] = 13   find the length/number of values in the set len(m)   delete a key/value pair delete(m, &amp;quot;k2&amp;quot;)   get the value of a key v1 := m[&amp;quot;k2&amp;quot;]   get value of a key &amp;amp; if the key exists v1, vExists := m[&amp;quot;k2&amp;quot;]   just check if the key exists _, vExists := m[&amp;quot;k2&amp;quot;]    example:</description>
     </item>
     
     <item>

@@ -38,6 +38,24 @@
     </item>
     
     <item>
+      <title>Data</title>
+      <link>http://thomaskoefod.com/go1/tags/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Else</title>
+      <link>http://thomaskoefod.com/go1/tags/else/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/tags/else/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Filesystem</title>
       <link>http://thomaskoefod.com/go1/tags/filesystem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -88,6 +106,24 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://thomaskoefod.com/go1/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>If</title>
+      <link>http://thomaskoefod.com/go1/tags/if/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/tags/if/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Loop</title>
+      <link>http://thomaskoefod.com/go1/tags/loop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/tags/loop/</guid>
       <description></description>
     </item>
     
@@ -160,6 +196,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://thomaskoefod.com/go1/tags/stuff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Switch</title>
+      <link>http://thomaskoefod.com/go1/tags/switch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/tags/switch/</guid>
       <description></description>
     </item>
     

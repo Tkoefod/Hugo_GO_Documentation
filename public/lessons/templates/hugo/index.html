@@ -13,7 +13,7 @@
 <body>
     
 <div class="menu">
-    <div class="menu-item"><a href="/">Main</a></div>
+    <div class="menu-item"><a href="http://thomaskoefod.com/go1">Main</a></div>
 
     <div class="menu-item"><a href="/go1/lessons/">Lessons</a> </div>  
 
@@ -30,6 +30,51 @@
 <ul>
 <li>(HUGO)[<a href="https://gohugo.io">https://gohugo.io</a>]</li>
 </ul>
+
+<p>HUGO takes markdown files along with TOML, JSON, or YAML and feeds that through the templates to create the site.</p>
+
+<h2 id="types-of-front-matter-data-types">Types of Front Matter data types</h2>
+
+<p>Front Matter in HUGO is the data that is included at the top of the markdown file along with some predefined variables that HUGO provides.</p>
+
+<h3 id="yaml-most-common">YAML (most common)</h3>
+
+<p>example:</p>
+
+<pre><code>---
+someKey: &quot;value&quot;
+someNum: 45
+someBool: true
+---
+</code></pre>
+
+<p><a href="http://yaml.org/spec/1.2/spec.html">offical spec</a></p>
+
+<h3 id="toml-very-simular-to-yaml-and-older-format">TOML (very simular to YAML and older format)</h3>
+
+<p>example:</p>
+
+<pre><code>+++
+someKey = &quot;value&quot;
+someNum = 45
+someBool = true
++++
+</code></pre>
+
+<p><a href="https://github.com/toml-lang/toml">offical spec</a></p>
+
+<h3 id="json-standard-json">JSON ( standard JSON )</h3>
+
+<p>example:</p>
+
+<pre><code>{
+    someKey: &quot;value&quot;,
+    someNum: 45,
+    someBool: true
+}
+</code></pre>
+
+<p><a href="https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf">offical spec</a></p>
 
 
 </body>

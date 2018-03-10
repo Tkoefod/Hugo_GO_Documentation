@@ -35,7 +35,25 @@
   </url>
   
   <url>
+    <loc>http://thomaskoefod.com/go1/lessons/intro/control/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/data/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/datastructors/</loc>
+  </url>
+  
+  <url>
     <loc>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iii/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/else/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -97,11 +115,21 @@
   </url>
   
   <url>
+    <loc>http://thomaskoefod.com/go1/tags/if/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://thomaskoefod.com/go1/lessons/intro/</loc>
   </url>
   
   <url>
     <loc>http://thomaskoefod.com/go1/lessons/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/loop/</loc>
     <priority>0</priority>
   </url>
   
@@ -112,6 +140,10 @@
   
   <url>
     <loc>http://thomaskoefod.com/go1/lessons/intro/loops/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/intro/maps/</loc>
   </url>
   
   <url>
@@ -166,6 +198,11 @@
   
   <url>
     <loc>http://thomaskoefod.com/go1/tags/stuff/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/switch/</loc>
     <priority>0</priority>
   </url>
   

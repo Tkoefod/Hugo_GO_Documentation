@@ -27,7 +27,7 @@ package main import &amp;quot;fmt&amp;quot; func foo(c chan int, someValue int){
       
       <guid>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy/</guid>
       <description>Goroutines  include &amp;lsquo;go&amp;rsquo; infront of function to make it run async. go funcName()  sync package allows the use of wait groups that empower us to include multiple goroutines into a single wait group and we can then do something once all those are complete.
- import &amp;quot;sync&amp;quot; var wg sync.WaitGroup wg.Add(1) wg.Wait() wg.Done()   Video Tutorial  Defer statement defines that something should only run after the rest of the function is complete.</description>
+ import &amp;quot;sync&amp;quot; var wg sync.WaitGroup wg.Add(1) wg.Wait() wg.Done()   Video Tutorial source  Defer statement defines that something should only run after the rest of the function is complete.</description>
     </item>
     
     <item>

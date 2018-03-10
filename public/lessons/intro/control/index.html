@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/js/highlight/styles/tomorrow-night-blue.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/main.css" />
+    <script src="http://thomaskoefod.com/go1/main.js"></script>
+    <script src="http://thomaskoefod.com/go1/js/highlight/highlight.pack.js"></script>
+</head>
+<body>
+    
+<div class="menu">
+    <div class="menu-item"><a href="http://thomaskoefod.com/go1">Main</a></div>
+
+    <div class="menu-item"><a href="/go1/lessons/">Lessons</a> </div>  
+
+</div>
+    <div id="Site-Title"><h1>Go Lang Notes</h1></div>
+    
+    <hr />
+    
+    <h1>Control Commands</h1>
+    
+
+<h3 id="control-structors-if-else-switch">Control Structors (if/else/switch)</h3>
+
+<h4 id="if-command">if command</h4>
+
+<h4 id="switch">switch</h4>
+
+<p>Syntax:</p>
+
+<pre><code>    switch &lt;variable&gt; {
+        case &lt;value&gt;:
+            // some code
+        case &lt;value2&gt; 
+            // some other code
+        default: 
+            // some code that runs if the others do not.
+    }
+</code></pre>
+
+<p>the switch command allows one of many conditionals to be selected based on the &ldquo;switch&rdquo;.  In the simple and probably most commong example switch command takes a single parameter and based on it does one of many cases.</p>
+
+<p>simple example:</p>
+
+<pre><code class="language-go"> 	
+
+    i := 2
+    fmt.Print(&quot;Write &quot;, i, &quot; as &quot;)
+    switch i {
+    case 1:
+        fmt.Println(&quot;one&quot;)
+    case 2:
+        fmt.Println(&quot;two&quot;)
+    case 3:
+        fmt.Println(&quot;three&quot;)
+    }
+
+</code></pre>
+
+<p>example: (from: <a href="https://gobyexample.com/switch">https://gobyexample.com/switch</a>)</p>
+
+<pre><code class="language-go">switch time.Now().Weekday() {
+    case time.Saturday, time.Sunday:
+        fmt.Println(&quot;It's the weekend&quot;)
+    default:
+        fmt.Println(&quot;It's a weekday&quot;)
+    }
+</code></pre>
+
+
+</body>
+</html>

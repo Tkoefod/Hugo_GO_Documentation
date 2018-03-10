@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/js/highlight/styles/tomorrow-night-blue.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/main.css" />
+    <script src="http://thomaskoefod.com/go1/main.js"></script>
+    <script src="http://thomaskoefod.com/go1/js/highlight/highlight.pack.js"></script>
+</head>
+<body>
+    
+<div class="menu">
+    <div class="menu-item"><a href="http://thomaskoefod.com/go1">Main</a></div>
+
+    <div class="menu-item"><a href="/go1/lessons/">Lessons</a> </div>  
+
+</div>
+    <div id="Site-Title"><h1>Go Lang Notes</h1></div>
+    
+    <hr />
+    
+    <h1>Maps</h1>
+    
+
+<h2 id="map-data-structor">Map data structor</h2>
+
+<p>maps are unsorted set of data consisting of keys and values that are associated to them.  If you ask to get the value of a key that doesn&rsquo;t exist &lsquo;0&rsquo; is returned.</p>
+
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>create emptry map</td>
+<td><code>m := make(map[string]int)</code></td>
+</tr>
+
+<tr>
+<td>create &amp; declare</td>
+<td><code>n := map[string]int{&quot;foo&quot;: 1, &quot;bar&quot;: 2}</code></td>
+</tr>
+
+<tr>
+<td>add data</td>
+<td><code>m[&quot;k2&quot;] = 13</code></td>
+</tr>
+
+<tr>
+<td>find the length/number of values in the set</td>
+<td><code>len(m)</code></td>
+</tr>
+
+<tr>
+<td>delete a key/value pair</td>
+<td><code>delete(m, &quot;k2&quot;)</code></td>
+</tr>
+
+<tr>
+<td>get the value of a key</td>
+<td><code>v1 := m[&quot;k2&quot;]</code></td>
+</tr>
+
+<tr>
+<td>get value of a key &amp; if the key exists</td>
+<td><code>v1, vExists := m[&quot;k2&quot;]</code></td>
+</tr>
+
+<tr>
+<td>just check if the key exists</td>
+<td><code>_, vExists := m[&quot;k2&quot;]</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>example:</p>
+
+<pre><code class="language-Go">package main
+
+import (
+	&quot;fmt&quot;
+	&quot;strconv&quot;
+)
+
+func main() {
+	test := make(map[int]string)
+	for i := 0; i &lt; 10; i++ {
+		test[i] = &quot;something &quot; + strconv.Itoa(i)
+	}
+	for i := range test {
+		fmt.Println(&quot;line: &quot;, test[i])
+	}
+	fmt.Println(&quot;test: &quot;, test)
+}
+</code></pre>
+
+
+</body>
+</html>
