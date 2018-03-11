@@ -27,12 +27,30 @@
 
 <h3 id="functions">Functions</h3>
 
+<p>functions in go not only can take multiple arguments but can also return multiple values.</p>
+
 <p>Define a Function:
 <code>func &lt;funcname&gt;( &lt;in Variables&gt; ) &lt;out variable types&gt;  { // so somehting }</code></p>
 
 <p><em>example:</em></p>
 
-<pre><code class="language-Go">func myFunction( change )
+<pre><code class="language-Go">func myFunction( passedParam string ) int {
+
+}
+</code></pre>
+
+<h4 id="variadic-functions">Variadic Functions</h4>
+
+<p>Functions that take a variable amount of arguments</p>
+
+<pre><code class="language-go">func sum(nums ...int) {
+    fmt.Print(nums, &quot; &quot;)
+    total := 0
+    for _, num := range nums {
+        total += num
+    }
+    fmt.Println(total)
+}
 </code></pre>
 
 

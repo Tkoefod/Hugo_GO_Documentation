@@ -13,10 +13,28 @@ tags:
 
 ### Functions
 
+functions in go not only can take multiple arguments but can also return multiple values.
+
 Define a Function:
 ` func <funcname>( <in Variables> ) <out variable types>  { // so somehting }`
 
 _example:_ 
 ``` Go
-func myFunction( change )
+func myFunction( passedParam string ) int {
+
+}
+```
+
+#### Variadic Functions
+Functions that take a variable amount of arguments
+
+```go
+func sum(nums ...int) {
+    fmt.Print(nums, " ")
+    total := 0
+    for _, num := range nums {
+        total += num
+    }
+    fmt.Println(total)
+}
 ```

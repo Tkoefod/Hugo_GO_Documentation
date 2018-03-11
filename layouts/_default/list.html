@@ -12,13 +12,15 @@
     {{.Content}}
     {{ if .Pages }}
     <h3>Chapter: {{.Params.chapter}}</h3>
-    <ul>
+    <div class="section-list">
         {{ range sort .Pages ".Params.lesson"}}
-        <li>
-            <a href="{{ .URL }}"> {{ .Title }} Lesson: {{.Params.lesson}} </a>
-        </li>
+            <div class="section-list-item">
+                 Lesson: {{.Params.lesson}}
+                <a href="{{ .URL }}"> {{ .Title }} </a>
+            </div>
         {{ end }}
-    </ul>
+    </div>
+
     {{end}}
     
     <br />

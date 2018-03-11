@@ -85,9 +85,11 @@ f.close()  Reading a File Reading a whole File (simple method)  uses Package: io
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://thomaskoefod.com/go1/lessons/intro/functions/</guid>
-      <description> Functions Define a Function: func &amp;lt;funcname&amp;gt;( &amp;lt;in Variables&amp;gt; ) &amp;lt;out variable types&amp;gt; { // so somehting }
+      <description>Functions functions in go not only can take multiple arguments but can also return multiple values.
+Define a Function: func &amp;lt;funcname&amp;gt;( &amp;lt;in Variables&amp;gt; ) &amp;lt;out variable types&amp;gt; { // so somehting }
 example:
-func myFunction( change )  </description>
+func myFunction( passedParam string ) int { }  Variadic Functions Functions that take a variable amount of arguments
+func sum(nums ...int) { fmt.Print(nums, &amp;quot; &amp;quot;) total := 0 for _, num := range nums { total += num } fmt.</description>
     </item>
     
     <item>
