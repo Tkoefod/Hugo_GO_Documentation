@@ -19,9 +19,9 @@ In GO programmers use camel case for names so things like 'CamelCase' or 'camelC
 | name | type | syntax | example |
 | --- | --- | --- | --- |
 | var | variable | var name type = expression | var myVar int = 5 |
-| const | constant |
+| const | constant | const name type = expression | const myVar string = "something" |
 | type | |
-| func | function |
+| func | function | func name (input_type) output_type { }|
 
 
 #### Types of Variables

@@ -10,5 +10,38 @@
 	<atom:link href="http://thomaskoefod.com/go1/lessons/datastructors/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Arrays</title>
+      <link>http://thomaskoefod.com/go1/lessons/datastructors/arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/datastructors/arrays/</guid>
+      <description>  single type fixed length numbered sequence  Define new array examples: - var x [5]int - var x [5]float64
+ builtin function append() builtin function len()  </description>
+    </item>
+    
+    <item>
+      <title>Maps</title>
+      <link>http://thomaskoefod.com/go1/lessons/datastructors/maps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/datastructors/maps/</guid>
+      <description>built-in associative data type (aka known as hashes or dicts in other languages).
+create a map m := make(map[string]int) makes map &amp;rsquo;m&amp;rsquo; with key type &amp;lsquo;string&amp;rsquo; and value type &amp;lsquo;int&amp;rsquo; example:
+m := make(map[string]int) m[&amp;quot;one&amp;quot;] = 17 m[&amp;quot;two&amp;quot;] = 02 valueOne := m[&amp;quot;one&amp;quot;]  maps are unsorted set of data consisting of keys and values that are associated to them. If you ask to get the value of a key that doesn&amp;rsquo;t exist &amp;lsquo;0&amp;rsquo; is returned.</description>
+    </item>
+    
+    <item>
+      <title>Slices</title>
+      <link>http://thomaskoefod.com/go1/lessons/datastructors/slices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/datastructors/slices/</guid>
+      <description>single type numbered sequence  slices are typed only by the elements they contain (not the number of elements).
+Declare new Slice ie: `s := make([]string, 3)`  makes a new slice of array string type length 3 with inital values of 0
+assigning values s[0] = &amp;quot;something1&amp;quot; s[1] = &amp;quot;something2&amp;quot; s[2] = &amp;quot;c&amp;quot;  assign values to already created slices.
+built in methods for slices append newslice = append(origSlice, newValue, newValue2)</description>
+    </item>
+    
   </channel>
 </rss>

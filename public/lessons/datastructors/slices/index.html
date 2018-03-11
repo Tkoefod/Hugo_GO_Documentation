@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/js/highlight/styles/tomorrow-night-blue.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/main.css" />
+    <script src="http://thomaskoefod.com/go1/main.js"></script>
+    <script src="http://thomaskoefod.com/go1/js/highlight/highlight.pack.js"></script>
+</head>
+<body>
+    
+<div class="menu">
+    <div class="menu-item"><a href="http://thomaskoefod.com/go1">Main</a></div>
+
+    <div class="menu-item"><a href="/go1/lessons/">Lessons</a> </div>  
+
+</div>
+    <div id="Site-Title"><h1>Go Lang Notes</h1></div>
+    
+    <hr />
+    
+    <h1>Slices</h1>
+    
+
+<ol>
+<li>single type</li>
+<li>numbered sequence</li>
+</ol>
+
+<p>slices are typed only by the elements they contain (not the number of elements).</p>
+
+<h3 id="declare-new-slice">Declare new Slice</h3>
+
+<pre><code>ie: `s := make([]string, 3)`
+</code></pre>
+
+<p>makes a new slice of array string type length 3 with inital values of 0</p>
+
+<h3 id="assigning-values">assigning values</h3>
+
+<pre><code class="language-go">    s[0] = &quot;something1&quot;
+    s[1] = &quot;something2&quot;
+    s[2] = &quot;c&quot;
+</code></pre>
+
+<p>assign values to already created slices.</p>
+
+<h3 id="built-in-methods-for-slices">built in methods for slices</h3>
+
+<h4 id="append">append</h4>
+
+<p>newslice = append(origSlice, newValue, newValue2)</p>
+
+<pre><code class="language-go">    s = append(s, &quot;something4&quot;)
+    s = append(s, &quot;sometthing5&quot;, &quot;f&quot;)
+</code></pre>
+
+<h4 id="copy">copy</h4>
+
+<p>copy(fromSlice, toSlice)</p>
+
+
+</body>
+</html>

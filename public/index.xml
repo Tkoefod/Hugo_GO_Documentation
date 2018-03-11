@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Arrays</title>
+      <link>http://thomaskoefod.com/go1/lessons/datastructors/arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/datastructors/arrays/</guid>
+      <description>  single type fixed length numbered sequence  Define new array examples: - var x [5]int - var x [5]float64
+ builtin function append() builtin function len()  </description>
+    </item>
+    
+    <item>
       <title>Channels</title>
       <link>http://thomaskoefod.com/go1/lessons/concurrency/concurrancy_ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -87,7 +97,17 @@ func myFunction( change )  </description>
       
       <guid>http://thomaskoefod.com/go1/lessons/intro/getting_started/</guid>
       <description>In GO programmers use camel case for names so things like &amp;lsquo;CamelCase&amp;rsquo; or &amp;lsquo;camelCase&amp;rsquo; but not &amp;lsquo;camel_case&amp;rsquo;.
-Main types of Declarations:    name type syntax example     var variable var name type = expression var myVar int = 5   const constant     type      func function      Types of Variables    name type example     int integer number 25   float64 long 64 bit decimal 1.</description>
+Main types of Declarations:    name type syntax example     var variable var name type = expression var myVar int = 5   const constant const name type = expression const myVar string = &amp;ldquo;something&amp;rdquo;   type      func function func name (input_type) output_type { }     Types of Variables    name type example     int integer number 25   float64 long 64 bit decimal 1.</description>
+    </item>
+    
+    <item>
+      <title>Graphic Magic</title>
+      <link>http://thomaskoefod.com/go1/lessons/packages/gm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/packages/gm/</guid>
+      <description>GraphicsMagic  gm main site gm golang bindings site  example:
+package main import ( &amp;quot;flag&amp;quot; &amp;quot;github.com/gographics/gmagick&amp;quot; ) func resize(orig string, dest string) { mw := gmagick.NewMagickWand() defer mw.Destroy() mw.ReadImage(orig) filter := gmagick.FILTER_LANCZOS w := mw.GetImageWidth() h := mw.GetImageHeight() mw.ResizeImage(w/2, h/2, filter, 1) mw.WriteImage(dest) } func main() { f := flag.String(&amp;quot;from&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;original image file ...&amp;quot;) t := flag.String(&amp;quot;to&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;target file ...&amp;quot;) flag.Parse() gmagick.Initialize() defer gmagick.Terminate() resize(*f, *t) }  so the command to use would be: thisProgram -from &amp;lt;somefile.</description>
     </item>
     
     <item>
@@ -117,12 +137,13 @@ Range the range command can be used with for to easily loop over arrays, lists, 
     
     <item>
       <title>Maps</title>
-      <link>http://thomaskoefod.com/go1/lessons/intro/maps/</link>
+      <link>http://thomaskoefod.com/go1/lessons/datastructors/maps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://thomaskoefod.com/go1/lessons/intro/maps/</guid>
-      <description>Map data structor maps are unsorted set of data consisting of keys and values that are associated to them. If you ask to get the value of a key that doesn&amp;rsquo;t exist &amp;lsquo;0&amp;rsquo; is returned.
-   Action Example     create emptry map m := make(map[string]int)   create &amp;amp; declare n := map[string]int{&amp;quot;foo&amp;quot;: 1, &amp;quot;bar&amp;quot;: 2}   add data m[&amp;quot;k2&amp;quot;] = 13   find the length/number of values in the set len(m)   delete a key/value pair delete(m, &amp;quot;k2&amp;quot;)   get the value of a key v1 := m[&amp;quot;k2&amp;quot;]   get value of a key &amp;amp; if the key exists v1, vExists := m[&amp;quot;k2&amp;quot;]   just check if the key exists _, vExists := m[&amp;quot;k2&amp;quot;]    example:</description>
+      <guid>http://thomaskoefod.com/go1/lessons/datastructors/maps/</guid>
+      <description>built-in associative data type (aka known as hashes or dicts in other languages).
+create a map m := make(map[string]int) makes map &amp;rsquo;m&amp;rsquo; with key type &amp;lsquo;string&amp;rsquo; and value type &amp;lsquo;int&amp;rsquo; example:
+m := make(map[string]int) m[&amp;quot;one&amp;quot;] = 17 m[&amp;quot;two&amp;quot;] = 02 valueOne := m[&amp;quot;one&amp;quot;]  maps are unsorted set of data consisting of keys and values that are associated to them. If you ask to get the value of a key that doesn&amp;rsquo;t exist &amp;lsquo;0&amp;rsquo; is returned.</description>
     </item>
     
     <item>
@@ -161,6 +182,18 @@ Tests if a pattern matches a string match, _ := regexp.MatchString(&amp;quot;p([
       <guid>http://thomaskoefod.com/go1/lessons/intro/reserved_names/</guid>
       <description> 25 keywords that are reserved Go has 25 keywords that are reserved for the system.
  break select case struct chan switch const type continue var default defer else fallthrough for func go goto if import interface map package range return  </description>
+    </item>
+    
+    <item>
+      <title>Slices</title>
+      <link>http://thomaskoefod.com/go1/lessons/datastructors/slices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/datastructors/slices/</guid>
+      <description>single type numbered sequence  slices are typed only by the elements they contain (not the number of elements).
+Declare new Slice ie: `s := make([]string, 3)`  makes a new slice of array string type length 3 with inital values of 0
+assigning values s[0] = &amp;quot;something1&amp;quot; s[1] = &amp;quot;something2&amp;quot; s[2] = &amp;quot;c&amp;quot;  assign values to already created slices.
+built in methods for slices append newslice = append(origSlice, newValue, newValue2)</description>
     </item>
     
     <item>

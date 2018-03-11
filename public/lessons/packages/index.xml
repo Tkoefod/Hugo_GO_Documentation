@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other Packages on Go Lang Notes</title>
+    <link>http://thomaskoefod.com/go1/lessons/packages/</link>
+    <description>Recent content in Other Packages on Go Lang Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://thomaskoefod.com/go1/lessons/packages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Graphic Magic</title>
+      <link>http://thomaskoefod.com/go1/lessons/packages/gm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/packages/gm/</guid>
+      <description>GraphicsMagic  gm main site gm golang bindings site  example:
+package main import ( &amp;quot;flag&amp;quot; &amp;quot;github.com/gographics/gmagick&amp;quot; ) func resize(orig string, dest string) { mw := gmagick.NewMagickWand() defer mw.Destroy() mw.ReadImage(orig) filter := gmagick.FILTER_LANCZOS w := mw.GetImageWidth() h := mw.GetImageHeight() mw.ResizeImage(w/2, h/2, filter, 1) mw.WriteImage(dest) } func main() { f := flag.String(&amp;quot;from&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;original image file ...&amp;quot;) t := flag.String(&amp;quot;to&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;target file ...&amp;quot;) flag.Parse() gmagick.Initialize() defer gmagick.Terminate() resize(*f, *t) }  so the command to use would be: thisProgram -from &amp;lt;somefile.</description>
+    </item>
+    
+  </channel>
+</rss>

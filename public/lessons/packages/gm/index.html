@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/js/highlight/styles/tomorrow-night-blue.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://thomaskoefod.com/go1/main.css" />
+    <script src="http://thomaskoefod.com/go1/main.js"></script>
+    <script src="http://thomaskoefod.com/go1/js/highlight/highlight.pack.js"></script>
+</head>
+<body>
+    
+<div class="menu">
+    <div class="menu-item"><a href="http://thomaskoefod.com/go1">Main</a></div>
+
+    <div class="menu-item"><a href="/go1/lessons/">Lessons</a> </div>  
+
+</div>
+    <div id="Site-Title"><h1>Go Lang Notes</h1></div>
+    
+    <hr />
+    
+    <h1>Graphic Magic</h1>
+    
+
+<h2 id="graphicsmagic">GraphicsMagic</h2>
+
+<ul>
+<li><a href="http://aheckmann.github.io/gm/">gm main site</a></li>
+<li><a href="https://github.com/gographics/gmagick">gm golang bindings site</a></li>
+</ul>
+
+<p>example:</p>
+
+<pre><code class="language-Go">package main
+
+import (
+    &quot;flag&quot;
+    &quot;github.com/gographics/gmagick&quot;
+)
+
+func resize(orig string, dest string) {
+    mw := gmagick.NewMagickWand()
+    defer mw.Destroy()
+    mw.ReadImage(orig)
+    filter := gmagick.FILTER_LANCZOS
+    w := mw.GetImageWidth()
+    h := mw.GetImageHeight()
+    mw.ResizeImage(w/2, h/2, filter, 1)
+    mw.WriteImage(dest)
+}
+
+func main() {
+    f := flag.String(&quot;from&quot;, &quot;&quot;, &quot;original image file ...&quot;)
+    t := flag.String(&quot;to&quot;, &quot;&quot;, &quot;target file ...&quot;)
+    flag.Parse()
+
+    gmagick.Initialize()
+    defer gmagick.Terminate()
+
+    resize(*f, *t)
+}
+</code></pre>
+
+<p>so the command to use would be: <code>thisProgram -from &lt;somefile.jpg&gt; -to &lt;newfile.jpg&gt;</code></p>
+
+
+</body>
+</html>

@@ -1,18 +1,21 @@
 ---
 title: "Maps"
-lesson: 8
-chapter: 1
-cover: "https://unsplash.it/400/300/?random?BoldMage"
-date: "03/01/2018"
-category: "golang"
-type: "lesson"
-tags:
-    - programming
-    - data
-    - gettingStarted
+lesson: 3
 ---
 
-## Map data structor 
+built-in associative data type (aka known as hashes or dicts in other languages).
+	
+
+### create a map
+` m := make(map[string]int) `
+makes map 'm' with key type 'string' and value type 'int'
+example: 
+```go
+    m := make(map[string]int)
+    m["one"] = 17
+    m["two"] = 02
+    valueOne := m["one"]
+```
 
 maps are unsorted set of data consisting of keys and values that are associated to them.  If you ask to get the value of a key that doesn't exist '0' is returned.
 

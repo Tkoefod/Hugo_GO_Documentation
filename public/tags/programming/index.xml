@@ -87,7 +87,17 @@ func myFunction( change )  </description>
       
       <guid>http://thomaskoefod.com/go1/lessons/intro/getting_started/</guid>
       <description>In GO programmers use camel case for names so things like &amp;lsquo;CamelCase&amp;rsquo; or &amp;lsquo;camelCase&amp;rsquo; but not &amp;lsquo;camel_case&amp;rsquo;.
-Main types of Declarations:    name type syntax example     var variable var name type = expression var myVar int = 5   const constant     type      func function      Types of Variables    name type example     int integer number 25   float64 long 64 bit decimal 1.</description>
+Main types of Declarations:    name type syntax example     var variable var name type = expression var myVar int = 5   const constant const name type = expression const myVar string = &amp;ldquo;something&amp;rdquo;   type      func function func name (input_type) output_type { }     Types of Variables    name type example     int integer number 25   float64 long 64 bit decimal 1.</description>
+    </item>
+    
+    <item>
+      <title>Graphic Magic</title>
+      <link>http://thomaskoefod.com/go1/lessons/packages/gm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thomaskoefod.com/go1/lessons/packages/gm/</guid>
+      <description>GraphicsMagic  gm main site gm golang bindings site  example:
+package main import ( &amp;quot;flag&amp;quot; &amp;quot;github.com/gographics/gmagick&amp;quot; ) func resize(orig string, dest string) { mw := gmagick.NewMagickWand() defer mw.Destroy() mw.ReadImage(orig) filter := gmagick.FILTER_LANCZOS w := mw.GetImageWidth() h := mw.GetImageHeight() mw.ResizeImage(w/2, h/2, filter, 1) mw.WriteImage(dest) } func main() { f := flag.String(&amp;quot;from&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;original image file ...&amp;quot;) t := flag.String(&amp;quot;to&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;target file ...&amp;quot;) flag.Parse() gmagick.Initialize() defer gmagick.Terminate() resize(*f, *t) }  so the command to use would be: thisProgram -from &amp;lt;somefile.</description>
     </item>
     
     <item>
@@ -113,16 +123,6 @@ Basic Syntax: for &amp;lt;int&amp;gt;; &amp;lt;comparision&amp;gt;; &amp;lt;incr
 Example:
 for i := 0; i &amp;lt; 5; i++ { // do something } for i &amp;gt; 16 { i++ }  any of the options for the For loop can be left off also.
 Range the range command can be used with for to easily loop over arrays, lists, etc.</description>
-    </item>
-    
-    <item>
-      <title>Maps</title>
-      <link>http://thomaskoefod.com/go1/lessons/intro/maps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://thomaskoefod.com/go1/lessons/intro/maps/</guid>
-      <description>Map data structor maps are unsorted set of data consisting of keys and values that are associated to them. If you ask to get the value of a key that doesn&amp;rsquo;t exist &amp;lsquo;0&amp;rsquo; is returned.
-   Action Example     create emptry map m := make(map[string]int)   create &amp;amp; declare n := map[string]int{&amp;quot;foo&amp;quot;: 1, &amp;quot;bar&amp;quot;: 2}   add data m[&amp;quot;k2&amp;quot;] = 13   find the length/number of values in the set len(m)   delete a key/value pair delete(m, &amp;quot;k2&amp;quot;)   get the value of a key v1 := m[&amp;quot;k2&amp;quot;]   get value of a key &amp;amp; if the key exists v1, vExists := m[&amp;quot;k2&amp;quot;]   just check if the key exists _, vExists := m[&amp;quot;k2&amp;quot;]    example:</description>
     </item>
     
     <item>

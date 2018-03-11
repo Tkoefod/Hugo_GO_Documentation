@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://thomaskoefod.com/go1/lessons/datastructors/arrays/</loc>
+  </url>
+  
+  <url>
     <loc>http://thomaskoefod.com/go1/tags/basic/</loc>
     <priority>0</priority>
   </url>
@@ -36,11 +40,6 @@
   
   <url>
     <loc>http://thomaskoefod.com/go1/lessons/intro/control/</loc>
-  </url>
-  
-  <url>
-    <loc>http://thomaskoefod.com/go1/tags/data/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -106,6 +105,10 @@
   </url>
   
   <url>
+    <loc>http://thomaskoefod.com/go1/lessons/packages/gm/</loc>
+  </url>
+  
+  <url>
     <loc>http://thomaskoefod.com/go1/lessons/templates/hugo/</loc>
   </url>
   
@@ -116,6 +119,11 @@
   
   <url>
     <loc>http://thomaskoefod.com/go1/tags/if/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/tags/images/</loc>
     <priority>0</priority>
   </url>
   
@@ -143,7 +151,7 @@
   </url>
   
   <url>
-    <loc>http://thomaskoefod.com/go1/lessons/intro/maps/</loc>
+    <loc>http://thomaskoefod.com/go1/lessons/datastructors/maps/</loc>
   </url>
   
   <url>
@@ -158,6 +166,10 @@
   
   <url>
     <loc>http://thomaskoefod.com/go1/lessons/filesystem/filesystem-iv/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/packages/</loc>
   </url>
   
   <url>
@@ -180,6 +192,10 @@
   
   <url>
     <loc>http://thomaskoefod.com/go1/lessons/intro/reserved_names/</loc>
+  </url>
+  
+  <url>
+    <loc>http://thomaskoefod.com/go1/lessons/datastructors/slices/</loc>
   </url>
   
   <url>
